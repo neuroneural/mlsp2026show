@@ -167,5 +167,13 @@
     "Austin Brockmeier": "img/chairs/brockmeier.jpg",
     "Christopher Drake": "img/chairs/drake.jpg",
     "Elizaveta Latash": "img/chairs/latash.jpg"
+  },
+  "keynotePhotos": {
+    "Tülay Adalı": "img/keynotes/adali.jpg",
+    "Chen Chen": "img/keynotes/chen.jpg",
+    "Anand Sarwate": "img/keynotes/sarwate.jpg",
+    "Justin Romberg": "img/keynotes/romberg.jpg",
+    "Chethan Pandarinath": "img/keynotes/pandarinath.jpg",
+    "Mohit Bansal": "img/keynotes/bansal.jpg"
   }
 }

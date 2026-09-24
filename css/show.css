@@ -216,3 +216,11 @@ h2, .h2 { font-family: var(--head); font-weight: 400; font-size: 80px; line-heig
 .nextline b { color: var(--white); }
 .nextline .ti { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 40px; }
 .person .r.cyan { color: var(--cyan); }
+
+/* Keynote photos */
+.keynotes.with-photos { gap: 44px; }
+.keynotes.with-photos .kn { display: grid; grid-template-columns: 230px 1fr; gap: 50px; align-items: center; }
+.keynotes .kn img, .kn-now img { width: 230px; height: 230px; border-radius: 50%; object-fit: cover; border: 8px solid var(--accent); background: var(--ink-3); }
+.kn-now { display: flex; align-items: center; gap: 56px; }
+.kn-now img { flex: 0 0 auto; width: 260px; height: 260px; }
+.kn-now .nowcard { margin-top: 0; }

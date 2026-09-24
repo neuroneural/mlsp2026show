@@ -110,7 +110,7 @@
           talksHTML(st.nextTalks, now, false);
       } else {
         html += '<div class="now-top"><div><div class="countdown-sub" style="margin:0 0 10px">Next up in</div>' + cdHTML(nx.start - now) + "</div></div>" +
-          card(nx, T.msClock(nx.start) + " to " + T.msClock(nx.end), "accent");
+          (nx.kind === "keynote" && kPhoto(ctx, nx.speaker) ? '<div class="kn-now" style="margin-top:30px"><img src="' + esc(kPhoto(ctx, nx.speaker)) + '" alt="">' + card(nx, T.msClock(nx.start) + " to " + T.msClock(nx.end), "accent") + "</div>" : card(nx, T.msClock(nx.start) + " to " + T.msClock(nx.end), "accent"));
       }
       var sb = el(html, "now");
       sb._target = nx.start;
@@ -172,7 +172,8 @@
     var cur = st.current;
     var hk = '<p class="eyebrow">On now until ' + T.msClock(cur.end) + "</p>";
     if (cur.kind === "keynote") {
-      hk += '<h1 style="font-size:80px">' + esc(cur.title) + ": " + esc(noDr(cur.speaker)) + '</h1><div class="lead">“' + esc(cur.talkTitle) + "”</div>";
+      var kp = kPhoto(ctx, cur.speaker);
+      hk += '<div class="kn-now">' + (kp ? '<img src="' + esc(kp) + '" alt="">' : "") + '<div><h1 style="font-size:80px">' + esc(cur.title) + ": " + esc(noDr(cur.speaker)) + '</h1><div class="lead">\u201c' + esc(cur.talkTitle) + "\u201d</div></div></div>";
     } else if (cur.kind === "tutorial") {
       hk += '<h1 style="font-size:80px">' + esc(cur.title) + '</h1><div class="lead">' + esc(cur.detail) + '</div><div class="body" style="margin-top:20px">' + esc(presenterNames(cur).join(", ")) + "</div>";
     } else {
@@ -231,12 +232,19 @@
     var st = ctx.state(), now = st.now;
     return ctx.timeline().filter(function (e) { return e.kind === "keynote" && e.end > now; });
   }
+  function kPhoto(ctx, speaker) {
+    var m = (ctx.stats && ctx.stats.keynotePhotos) || {};
+    return m[noDr(speaker)] || "";
+  }
   function keynotePage(i) {
     return function (ctx) {
       var ks = upcomingKeynotes(ctx).slice(i * 2, i * 2 + 2);
       if (!ks.length) return null;
-      return el('<p class="eyebrow">Keynote speakers</p><div class="keynotes">' + ks.map(function (k) {
-        return '<div class="kn"><div class="when">' + esc(k.day) + " " + T.msClock(k.start) + " · " + esc(k.title) + '</div><div class="sp">' + esc(noDr(k.speaker)) + '</div><div class="tt">“' + esc(k.talkTitle) + "”</div></div>";
+      // Photos only when every speaker on this slide has one.
+      var photos = ks.every(function (k) { return kPhoto(ctx, k.speaker); });
+      return el('<p class="eyebrow">Keynote speakers</p><div class="keynotes' + (photos ? " with-photos" : "") + '">' + ks.map(function (k) {
+        var text = '<div class="when">' + esc(k.day) + " " + T.msClock(k.start) + " \u00b7 " + esc(k.title) + '</div><div class="sp">' + esc(noDr(k.speaker)) + '</div><div class="tt">\u201c' + esc(k.talkTitle) + "\u201d</div>";
+        return photos ? '<div class="kn"><img src="' + esc(kPhoto(ctx, k.speaker)) + '" alt="" onerror="this.style.visibility=\'hidden\'"><div>' + text + "</div></div>" : '<div class="kn">' + text + "</div>";
       }).join("") + "</div>");
     };
   }
