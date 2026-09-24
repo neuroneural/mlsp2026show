@@ -1,0 +1,171 @@
+{
+  "source": "IEEE MLSP 2026 Conference Facts deck (organizing committee)",
+  "review": {
+    "entered": 195,
+    "accepted": 100,
+    "rejected": 90,
+    "withdrawn": 5,
+    "acceptancePct": 52.6
+  },
+  "reviews": {
+    "total": 708,
+    "reviewers": 146,
+    "areaChairs": 30,
+    "perPaper": 3.6,
+    "perReviewer": 4.8,
+    "papersPerAC": 6.5,
+    "minReviews": 3
+  },
+  "program": {
+    "orals": 30,
+    "oralSessions": 5,
+    "posters": 100,
+    "posterSessions": 3,
+    "postersPerSession": 33
+  },
+  "registrations": {
+    "total": 116,
+    "countries": 19,
+    "us": 76,
+    "abroad": 40,
+    "regions": [
+      [
+        "North America",
+        79
+      ],
+      [
+        "Europe",
+        20
+      ],
+      [
+        "Asia-Pacific",
+        12
+      ],
+      [
+        "Middle East",
+        2
+      ],
+      [
+        "Latin America",
+        2
+      ]
+    ],
+    "note": "Regions in the deck sum to 115, not 116. The region slide shows no total until this is fixed."
+  },
+  "committee": [
+    {
+      "name": "Sergey Plis",
+      "role": "Conference Co-Chair",
+      "photo": "img/people/plis.jpg"
+    },
+    {
+      "name": "Vince Calhoun",
+      "role": "Conference Co-Chair",
+      "photo": "img/people/calhoun.jpg"
+    },
+    {
+      "name": "Ran Xiao",
+      "role": "Technical Program Co-Chair",
+      "photo": "img/people/xiao.jpg"
+    },
+    {
+      "name": "Carl Yang",
+      "role": "Technical Program Co-Chair",
+      "photo": "img/people/yang.jpg"
+    },
+    {
+      "name": "Sundaresh Ram",
+      "role": "Technical Program Co-Chair",
+      "photo": "img/people/ram.jpg"
+    },
+    {
+      "name": "Hyeokhyen Kwon",
+      "role": "Technical Program Co-Chair",
+      "photo": "img/people/kwon.jpg"
+    },
+    {
+      "name": "Rogers Silva",
+      "role": "Tutorials Co-Chair",
+      "photo": "img/people/silva.jpg"
+    },
+    {
+      "name": "Anqi Wu",
+      "role": "Tutorials Co-Chair",
+      "photo": "img/people/wu.jpg"
+    },
+    {
+      "name": "Yize Zhao",
+      "role": "Publications Chair",
+      "photo": "img/people/zhao.jpg"
+    },
+    {
+      "name": "Brad Baker",
+      "role": "Keynote Chair",
+      "photo": "img/people/baker.jpg"
+    },
+    {
+      "name": "Amanda Jones",
+      "role": "Finance Chair",
+      "photo": "img/people/jones.jpg"
+    },
+    {
+      "name": "Maria Misiura",
+      "role": "Publicity Chair",
+      "photo": "img/people/misiura.jpg"
+    },
+    {
+      "name": "Ethan Lavine",
+      "role": "Publicity Co-Chair",
+      "photo": "img/people/lavine.jpg"
+    },
+    {
+      "name": "Asia Hemphill",
+      "role": "Volunteer Coordinator",
+      "photo": "img/people/hemphill.jpg"
+    },
+    {
+      "name": "Selim Suleymanoglu",
+      "role": "Volunteer Coordinator",
+      "photo": "img/people/suleymanoglu.jpg"
+    }
+  ],
+  "areaChairs": [
+    "Antonio Agudo",
+    "Zahid Akhtar",
+    "Tommy Sonne Alstrøm",
+    "Berker Banar",
+    "Kurt Butler",
+    "Carlos R. del-Blanco",
+    "Subhrakanti Dey",
+    "Gangadharan Esakki",
+    "Paul Honeine",
+    "Roland Hostettler",
+    "Zejiang Hou",
+    "Libo Huang",
+    "Wenbo Jiang",
+    "Alec Koppel",
+    "Smita Krishnaswamy",
+    "Dongyuan Li",
+    "Steffen Limmer",
+    "Jian Liu",
+    "Guohua Lv",
+    "Eduardo Fernandes Montesuma",
+    "Bahman Moraffah",
+    "Yusuf Ozturk",
+    "Hideyuki Tachibana",
+    "Ping Xu",
+    "Luoxiao Yang",
+    "Lina Yao",
+    "Chuanting Zhang",
+    "Tuo Zhang",
+    "Desheng Zheng",
+    "Lijun Zhu"
+  ],
+  "chairPhotos": {
+    "Cem Subakan": "img/chairs/subakan.jpg",
+    "Gangadharan Esakki": "img/chairs/esakki.jpg",
+    "Austin Brockmeier": "img/chairs/brockmeier.jpg",
+    "Christopher Drake": "img/chairs/drake.jpg",
+    "Elizaveta Latash": "img/chairs/latash.jpg"
+  }
+}

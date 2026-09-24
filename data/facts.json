@@ -1,0 +1,195 @@
+{
+  "checked_on": "2026-09-24",
+  "facts": [
+    {
+      "id": "atl-airport",
+      "group": "atlanta-fun",
+      "headline": "Busiest airport on Earth",
+      "big": "106.3M",
+      "text": "Hartsfield-Jackson is the world's busiest airport: 106.3 million passengers in 2025.",
+      "source_url": "https://aci.aero/?p=160852",
+      "source_title": "ACI World: World's Busiest Airports Revealed in Latest Global Rankings (Apr 14, 2026)",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "atl-trees",
+      "group": "atlanta-fun",
+      "headline": "The city in a forest",
+      "big": "45.7%",
+      "text": "Trees covered 45.7% of Atlanta in 2023, down from almost 48% in 2008. The city's goal is 50%.",
+      "source_url": "https://www.ajc.com/business/2026/08/atlantas-tree-canopy-is-shrinking-its-unclear-what-the-city-will-do-next/",
+      "source_title": "AJC: Atlanta's tree canopy has been shrinking (Aug 12, 2026), citing a Georgia Tech study",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "atl-coke",
+      "group": "atlanta-fun",
+      "headline": "Born in Atlanta",
+      "big": "1886",
+      "text": "The world's first Coca-Cola was served in Atlanta on May 8, 1886, at Jacobs' Pharmacy.",
+      "source_url": "https://guides.loc.gov/this-month-in-business-history/may/first-coca-cola-served",
+      "source_title": "Library of Congress: World's First Coca-Cola was Served",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "atl-mlk",
+      "group": "atlanta-fun",
+      "headline": "Up the street",
+      "big": "501 Auburn",
+      "text": "Dr. Martin Luther King Jr. was born in 1929 at 501 Auburn Avenue. You are at 100 Auburn Avenue.",
+      "source_url": "https://home.nps.gov/places/birth-home.htm",
+      "source_title": "National Park Service: Birth Home, Martin Luther King Jr. National Historical Park",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "atl-aquarium",
+      "group": "atlanta-fun",
+      "headline": "Wednesday's banquet venue",
+      "big": "Whale sharks",
+      "text": "The Georgia Aquarium is the only aquarium in the Western Hemisphere with whale sharks. Their gallery holds over 6 million gallons.",
+      "source_url": "https://www.georgiaaquarium.org/resource-center/deep-dive/whale-sharks/",
+      "source_title": "Georgia Aquarium: Whale Sharks 101",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "atl-olympics",
+      "group": "atlanta-fun",
+      "headline": "The Centennial Games",
+      "big": "1996",
+      "text": "Atlanta hosted the 1996 Summer Olympics: 10,318 athletes from 197 nations, July 19 to August 4.",
+      "source_url": "https://www.georgiaencyclopedia.org/articles/sports-outdoor-recreation/olympic-games-in-1996/",
+      "source_title": "New Georgia Encyclopedia: Olympic Games in 1996",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "atl-icassp96",
+      "group": "mlsp-community",
+      "headline": "Signal processing was here first",
+      "big": "ICASSP '96",
+      "text": "ICASSP met in Atlanta on May 7 to 10, 1996, two months before the Olympics.",
+      "source_url": "https://researchr.org/publication/icassp-1996",
+      "source_title": "ICASSP '96 proceedings record, Atlanta, Georgia, USA, May 7-10, 1996 (dblp / researchr)",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "eng-gt-size",
+      "group": "atlanta-engineering",
+      "headline": "Georgia Tech engineering",
+      "big": "22,405",
+      "text": "Georgia Tech enrolled 22,405 engineering students in fall 2026, the largest college of its kind in the U.S.",
+      "source_url": "https://coe.gatech.edu/about/facts-rankings",
+      "source_title": "Georgia Tech College of Engineering: Facts and Rankings",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "eng-gt-phd",
+      "group": "atlanta-engineering",
+      "headline": "Engineers by the thousand",
+      "big": "5,736",
+      "text": "Georgia Tech awarded 5,736 engineering degrees in 2025-26. ASEE ranks it the top U.S. producer of engineering PhDs.",
+      "source_url": "https://coe.gatech.edu/about/facts-rankings",
+      "source_title": "Georgia Tech College of Engineering: Facts and Rankings",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "eng-cdc",
+      "group": "atlanta-engineering",
+      "headline": "Public health HQ",
+      "big": "1946",
+      "text": "The CDC opened in Atlanta on July 1, 1946. Its headquarters are still here, on Clifton Road.",
+      "source_url": "https://www.cdc.gov/museum/history/our-story.html",
+      "source_title": "David J. Sencer CDC Museum: Our Story",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "eng-auc",
+      "group": "atlanta-engineering",
+      "headline": "Atlanta University Center",
+      "big": "1929",
+      "text": "Formed in 1929, the Atlanta University Center is the world's oldest and largest group of historically Black colleges.",
+      "source_url": "https://aucenter.edu/history/",
+      "source_title": "Atlanta University Center Consortium: History",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "mlsp-origin",
+      "group": "mlsp-community",
+      "headline": "Where MLSP began",
+      "big": "1991",
+      "text": "MLSP began in Princeton in 1991 as the IEEE Workshop on Neural Networks for Signal Processing.",
+      "source_url": "https://2023.ieeemlsp.org/past-workshops/",
+      "source_title": "IEEE MLSP 2023: Past Workshops",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "mlsp-rename",
+      "group": "mlsp-community",
+      "headline": "A new name",
+      "big": "2004",
+      "text": "The workshop took the name MLSP in 2004, in São Luís, Brazil.",
+      "source_url": "https://2023.ieeemlsp.org/past-workshops/",
+      "source_title": "IEEE MLSP 2023: Past Workshops",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "mlsp-hosts",
+      "group": "mlsp-community",
+      "headline": "Recent MLSP hosts",
+      "list": ["2019 Pittsburgh", "2020 Espoo", "2021 Gold Coast", "2022 Xi'an", "2023 Rome", "2024 London", "2025 Istanbul", "2026 Atlanta"],
+      "text": "Recent MLSP hosts: Pittsburgh, Espoo, Gold Coast, Xi'an, Rome, London, Istanbul, and now Atlanta.",
+      "source_url": "https://2023.ieeemlsp.org/past-workshops/",
+      "source_title": "IEEE MLSP 2023 Past Workshops; MLSP 2024 call (London, Sep 22-25, 2024); MLSP 2025 site (Istanbul)",
+      "extra_sources": ["https://enotice.vtools.ieee.org/public/150800", "https://2025.ieeemlsp.org/en/"],
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "mlsp-36th",
+      "group": "mlsp-community",
+      "headline": "This is number 36",
+      "big": "36th",
+      "text": "Istanbul hosted the 35th MLSP in 2025. Atlanta hosts the 36th.",
+      "source_url": "https://2025.ieeemlsp.org/en/",
+      "source_title": "IEEE MLSP 2025: 35th IEEE International Workshop on Machine Learning for Signal Processing",
+      "checked_on": "2026-09-24"
+    }
+  ],
+  "trivia": [
+    {
+      "id": "q-fft",
+      "question": "Which 1965 paper made the fast Fourier transform famous?",
+      "answer": "Cooley and Tukey, \"An algorithm for the machine calculation of complex Fourier series,\" 1965.",
+      "source_url": "https://www.ams.org/journals/mcom/1965-19-090/S0025-5718-1965-0178586-1/",
+      "source_title": "Mathematics of Computation 19 (1965): Cooley and Tukey",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "q-backprop",
+      "question": "In what year did Nature publish Rumelhart, Hinton, and Williams on backpropagation?",
+      "answer": "1986. That is 100 years after the first Coca-Cola was served in Atlanta.",
+      "source_url": "https://www.nature.com/articles/323533a0",
+      "source_title": "Nature 323 (Oct 9, 1986): Learning representations by back-propagating errors",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "q-peachtree",
+      "question": "How many Atlanta streets have \"Peachtree\" in the name?",
+      "answer": "71, says Discover Atlanta. Check the street name before you call a ride.",
+      "source_url": "https://discoveratlanta.com/stories/things-to-do/what-you-need-to-know-about-atlantas-famous-peachtree-streets/",
+      "source_title": "Discover Atlanta: What You Need to Know About Atlanta's Famous Peachtree Streets",
+      "checked_on": "2026-09-24"
+    }
+  ],
+  "mlsp2027": {
+    "text": "See you at MLSP 2027 in Uppsala, Sweden, September 13 to 16, 2027.",
+    "source_url": "https://signalprocessingsociety.org/events/2027-ieee-international-workshop-machine-learning-signal-processing-mlsp",
+    "source_title": "IEEE Signal Processing Society: 2027 IEEE MLSP",
+    "checked_on": "2026-09-24"
+  },
+  "venues": {
+    "Banquet Dinner at the Aquarium": {
+      "place": "Georgia Aquarium",
+      "address": "225 Baker St NW, across from Centennial Olympic Park",
+      "source_url": "https://www.georgiaaquarium.org/contact-us/"
+    }
+  }
+}

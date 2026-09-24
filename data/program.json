@@ -1,0 +1,329 @@
+{
+  "conferenceTimezone": "America/New_York",
+  "program": [
+    {
+      "day": "Monday",
+      "dateLabel": "SEP 28",
+      "date": "2026-09-28",
+      "events": [
+        {
+          "time": "7:30 AM",
+          "title": "Registration",
+          "kind": "registration"
+        },
+        {
+          "time": "8:00–9:30 AM",
+          "title": "Tutorial 1",
+          "detail": "Continuous Evaluation and Monitoring of Foundation Models: Streaming, Knowledge-Graph, and Benchmarking Methods for LLMs, and Agentic AI",
+          "kind": "tutorial",
+          "presenters": [
+            "Kishor Datta Gupta, Ph.D. · Clark Atlanta University",
+            "Mohd Ariful Haque, MS · Atlanta University Center Consortium"
+          ],
+          "abstract": "Learn how to treat foundation-model outputs as time-indexed signals and detect hallucination, semantic drift, biased framing, and grounding failures through structured representations, adaptive thresholds, and anomaly detection. The tutorial moves beyond one-time leaderboards toward practical monitoring of LLMs, VLMs, RAG systems, and tool-using agents while models, prompts, retrieval corpora, safeguards, and the external world change."
+        },
+        {
+          "time": "9:30–10:00 AM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "10:00–11:30 AM",
+          "title": "Tutorial 2 · Session 1",
+          "detail": "Recent Advances in the Application of AI and Machine Learning to Medical Video Analysis Systems",
+          "kind": "tutorial",
+          "presenters": [
+            "Marios S. Pattichis, Ph.D. · University of New Mexico"
+          ],
+          "abstract": "An introduction to the evolution of AI models and datasets for medical video analysis, with emphasis on video representations, modern architectures, and self- and semi-supervised approaches for small ground-truth datasets. The session connects these foundations to generative and foundation models for multimodal medical imaging."
+        },
+        {
+          "time": "11:30–11:45 AM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "11:45 AM–1:00 PM",
+          "title": "Tutorial 2 · Session 2",
+          "detail": "Recent Advances in the Application of AI and Machine Learning to Medical Video Analysis Systems",
+          "kind": "tutorial",
+          "presenters": [
+            "Marios S. Pattichis, Ph.D. · University of New Mexico"
+          ],
+          "abstract": "A hands-on continuation with browser-based Google Colab demos. Attendees will work through concepts behind video Q&A, adversarial attacks and training, autoencoders, GANs, diffusion models, BiomedGPT, and where to find medical imaging and multimodal models and datasets."
+        },
+        {
+          "time": "1:00–2:00 PM",
+          "title": "Lunch Break",
+          "kind": "break"
+        },
+        {
+          "time": "2:00–3:15 PM",
+          "title": "Tutorial 3 · Session 1",
+          "detail": "Low-Rank Adaptation Redux in Large Models",
+          "kind": "tutorial",
+          "presenters": [
+            "Bingcong Li, Ph.D. · ETH Zurich",
+            "Yilang Zhang, Ph.D. · Morgan Stanley",
+            "Georgios B. Giannakis, Ph.D. · University of Minnesota"
+          ],
+          "abstract": "Large-model scale drives performance but makes task-specific adaptation costly. This tutorial connects classical signal-processing tools for low-rank modeling with LoRA-based fine-tuning, showing how low-dimensional update structure can reduce memory and compute."
+        },
+        {
+          "time": "3:15–3:45 PM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "3:45–5:30 PM",
+          "title": "Tutorial 3 · Session 2",
+          "detail": "Low-Rank Adaptation Redux in Large Models",
+          "kind": "tutorial",
+          "presenters": [
+            "Bingcong Li, Ph.D. · ETH Zurich",
+            "Yilang Zhang, Ph.D. · Morgan Stanley",
+            "Georgios B. Giannakis, Ph.D. · University of Minnesota"
+          ],
+          "abstract": "A continuation of the low-rank adaptation framework, aimed at building a systematic understanding of fine-tuning methods with stronger expressiveness, effectiveness, and applicability. The session highlights how signal-processing insights can support more principled and broadly deployable LLM adaptation."
+        },
+        {
+          "time": "5:30–6:00 PM",
+          "title": "Special Keynote",
+          "detail": "Tülay Adalı",
+          "kind": "keynote",
+          "talkTitle": "From Latent Structure to Reliable Conclusions: Interpretable Data Fusion and Fair Comparisons",
+          "abstract": "In many fields today, including neuroscience, remote sensing, computational social science, and the physical sciences, multiple datasets are readily available. Matrix and tensor factorizations provide a principled framework for their joint analysis, enabling datasets to interact and inform one another while making relatively modest assumptions about their underlying relationships. A central motivation for these methods is the recovery of components that are directly interpretable and can be meaningfully compared across datasets, subjects, or measurement sessions. This naturally raises questions about the reproducibility and stability of the estimated components, as well as how these properties compare across different representation learning approaches, which may differ in their statistical assumptions, model flexibility, and mechanisms for incorporating data structure.\n\nThis talk presents an overview of matrix and tensor factorization models, with emphasis on independent component analysis and its multi-dataset extension, independent vector analysis. We discuss how these approaches identify directly interpretable latent structure and how the resulting components can be analyzed and compared across modalities and observations. We further examine the reproducibility and stability of estimated representations and revisit how new methods are evaluated within the signal processing community. In particular, we advocate for multidimensional comparisons that consider not only performance, but also interpretability, stability, reproducibility, identifiability, and the assumptions underlying each method, leading to more informative and reliable conclusions about their strengths and limitations."
+        },
+        {
+          "time": "6:00–9:00 PM",
+          "title": "Opening + Welcome Reception",
+          "kind": "social"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "dateLabel": "SEP 29",
+      "date": "2026-09-29",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Registration",
+          "kind": "registration"
+        },
+        {
+          "time": "9:00–10:00 AM",
+          "title": "Keynote 1",
+          "detail": "Dr. Chen Chen · Foundation",
+          "kind": "keynote",
+          "talkTitle": "Reinforcement learning for visual generation",
+          "abstract": "Visual generative models have advanced rapidly, yet aligning their outputs with precise conditions and human preferences remains challenging. This talk examines reinforcement learning for visual generation through three interconnected perspectives: reward design, reward rectification, and reward-data scaling. First, I will show how task-specific visual reward models and consistency feedback can provide explicit, efficient supervision for controllable image generation. Next, I will discuss how noisy or misaligned supervision can be rectified and strengthened through vision-language reasoning and contrastive signals, substantially improving instruction-based image editing. Finally, I will present a scalable framework for visual preference optimization that combines robust learning objectives with large, diverse, and carefully curated preference data for both image and video generation. Together, these studies highlight a central principle: effective reinforcement learning for visual generation depends not only on the optimization algorithm, but also on how reward signals are designed, corrected, and scaled."
+        },
+        {
+          "time": "10:00–10:30 AM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "10:30 AM–12:00 PM",
+          "title": "Oral Session 1",
+          "detail": "Foundation & Generative Models for Signals",
+          "kind": "oral",
+          "sessionId": "oral-1",
+          "chairs": [
+            {
+              "name": "Cem Subakan",
+              "affiliation": "Université Laval",
+              "profileUrl": "https://scholar.google.com/citations?user=zXzV-0UAAAAJ&hl=en"
+            }
+          ]
+        },
+        {
+          "time": "12:00–1:00 PM",
+          "title": "Lunch Break",
+          "kind": "break"
+        },
+        {
+          "time": "1:00–2:00 PM",
+          "title": "Keynote 2",
+          "detail": "Dr. Anand Sarwate · Federated",
+          "kind": "keynote",
+          "talkTitle": "Differential privacy: from statistical decisions to application challenges",
+          "abstract": "Differential privacy is now 20 years old and has become the \"gold standard\" for certain scenarios. At the same time, many people in machine learning and signal processing are less familiar with it. This talk will show how differential privacy connects to basic detection theory and the challenges that arise when trying to apply it to standard signal processing and machine learning scenarios."
+        },
+        {
+          "time": "2:00–3:30 PM",
+          "title": "Oral Session 2",
+          "detail": "Responsible, Causal & Federated Signal Intelligence",
+          "kind": "oral",
+          "sessionId": "oral-2",
+          "chairs": [
+            {
+              "name": "Gangadharan Esakki",
+              "affiliation": "NVIDIA",
+              "profileUrl": "https://scholar.google.com/citations?user=L1yX5EwAAAAJ&hl=en"
+            }
+          ]
+        },
+        {
+          "time": "3:30–4:00 PM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "4:00–6:00 PM",
+          "title": "Poster Session 1 + Special Session 1",
+          "kind": "poster",
+          "sessionId": "poster-1"
+        },
+        {
+          "time": "6:00–9:00 PM",
+          "title": "Social Event",
+          "kind": "social"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "dateLabel": "SEP 30",
+      "date": "2026-09-30",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Registration",
+          "kind": "registration"
+        },
+        {
+          "time": "9:00–10:00 AM",
+          "title": "Keynote 3",
+          "detail": "Dr. Justin Romberg · Temporal",
+          "kind": "keynote",
+          "talkTitle": "Dimensionality reduction for sensor arrays",
+          "abstract": "Next-generation RF arrays will have the ability to generate data at tremendous rates. In this talk we will discuss how these massive data streams can be managed using dimensionality reduction at the array. By adopting and expanding upon ideas from machine learning (including kernel regression, online PCA algorithms, and manifold optimization) and harmonic analysis, we develop a framework that is both \"hardware friendly\" and has a strong theoretical foundation."
+        },
+        {
+          "time": "10:00–10:30 AM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "10:30 AM–12:00 PM",
+          "title": "Oral Session 3",
+          "detail": "Temporal & Sequential Signal Learning",
+          "kind": "oral",
+          "sessionId": "oral-3",
+          "chairs": [
+            {
+              "name": "Prof. Austin Brockmeier",
+              "affiliation": "University of Delaware",
+              "profileUrl": "https://scholar.google.com/citations?user=g_QoCQQAAAAJ&hl=en"
+            }
+          ]
+        },
+        {
+          "time": "12:00–1:00 PM",
+          "title": "Lunch Break",
+          "kind": "break"
+        },
+        {
+          "time": "1:00–2:00 PM",
+          "title": "Keynote 4",
+          "detail": "Dr. Chethan Pandarinath · Neuroimaging",
+          "kind": "keynote",
+          "talkTitle": "Interpreting computational mechanisms from multi-area brain recordings",
+          "abstract": "Understanding how the brain subdivides into modular computational primitives requires disentangling one area's intrinsic dynamics from inter-area communication, yet existing models struggle with interpretable and hallucination-free inference of dynamics. We introduce DynISys, a multi-compartment latent dynamical systems model combining Neural ODEs and injective normalizing flows to achieve expressive, trustworthy, and interpretable inference directly from recordings of multi-region neural activity. Applied to motor cortex during reaching, DynISys uncovers how inter-area communication mechanically modulates fixed-point landscapes to drive motor preparation—offering an interpretable computational framework for interrogating distributed neural processing."
+        },
+        {
+          "time": "2:00–3:30 PM",
+          "title": "Oral Session 4",
+          "detail": "ML for Neuroimaging, Neuroscience and Beyond",
+          "kind": "oral",
+          "sessionId": "oral-4",
+          "chairs": [
+            {
+              "name": "Christopher Drake",
+              "affiliation": "University of South Carolina",
+              "profileUrl": "https://www.linkedin.com/in/christopher-drake-73609315/"
+            }
+          ]
+        },
+        {
+          "time": "3:30–4:00 PM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "4:00–6:00 PM",
+          "title": "Poster Session 2 + Special Session 2",
+          "kind": "poster",
+          "sessionId": "poster-2"
+        },
+        {
+          "time": "6:00–9:00 PM",
+          "title": "Banquet Dinner at the Aquarium",
+          "kind": "social"
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "dateLabel": "OCT 1",
+      "date": "2026-10-01",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Registration",
+          "kind": "registration"
+        },
+        {
+          "time": "9:00–10:00 AM",
+          "title": "Keynote 5",
+          "detail": "Dr. Mohit Bansal · Agentic",
+          "kind": "keynote",
+          "talkTitle": "AI Challenges: Trustworthy Collaboration, World Discovery, and Long-Horizon Memory",
+          "abstract": "In this talk, I will discuss 3 major pitfalls and challenges of current state-of-the-art AI agents, and present potential solutions for: (1) Teaching agents to be trustworthy and reliable collaborators based on: social/pragmatic multi-agent interactions via speaker-listener confidence calibration, learning to balance positive and negative persuasion, and multi-agent AI safety through the lens of compositional attacks, theory-of-mind, and belief-steering; (2) Discovering and improving skills/world models needed for efficient, robust action and collaboration based on: learning programmatic skills, weakness-driven adaptive data/environment generation for skill improvement, and structured, selective world model discovery and inference; (3) Planning of long-horizon memory for multi-step reasoning and generation over continuously evolving, conflicting, and scattered information. We will cover diverse domains (math, commonsense, coding, tool-use, computer use, etc.), modalities (text, images, videos, audio, layouts, etc.), and real-world applications (early medical diagnosis and classroom education engagement)."
+        },
+        {
+          "time": "10:00–10:30 AM",
+          "title": "Coffee Break",
+          "kind": "break"
+        },
+        {
+          "time": "10:30 AM–12:00 PM",
+          "title": "Oral Session 5",
+          "detail": "Agentic & Multimodal Learning",
+          "kind": "oral",
+          "sessionId": "oral-5",
+          "chairs": [
+            {
+              "name": "Elizaveta Latash",
+              "affiliation": "Georgia State University",
+              "profileUrl": "https://scholar.google.com/citations?user=W7-IA6YAAAAJ&hl=en"
+            }
+          ]
+        },
+        {
+          "time": "12:00–1:00 PM",
+          "title": "Lunch Break",
+          "kind": "break"
+        },
+        {
+          "time": "1:00–3:00 PM",
+          "title": "Poster Session 3",
+          "kind": "poster",
+          "sessionId": "poster-3"
+        },
+        {
+          "time": "3:00–3:30 PM",
+          "title": "Closing Remarks",
+          "kind": "closing"
+        },
+        {
+          "time": "After 3:30 PM",
+          "title": "Conference Adjourns",
+          "kind": "closing"
+        }
+      ]
+    }
+  ]
+}

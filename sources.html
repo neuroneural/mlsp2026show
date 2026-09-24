@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071a33" />
+    <title>MLSP 2026 loop · Sources</title>
+    <style>
+      :root { --ink: #071a33; --cyan: #2ed6e6; --accent: #ffb545; --text: #dfe9f2; }
+      body { margin: 0; background: var(--ink); color: var(--text); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+      h1 { color: #fff; font-size: 28px; margin: 0 0 6px; }
+      h2 { color: var(--cyan); font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; margin: 36px 0 10px; }
+      p.meta { color: #9fb6cb; margin: 0 0 24px; }
+      ol { padding-left: 22px; }
+      li { margin: 0 0 16px; }
+      li .t { color: #fff; }
+      a { color: var(--cyan); word-break: break-word; }
+      small { color: #9fb6cb; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>MLSP 2026 auditorium loop: sources</h1>
+      <p class="meta" id="meta">Every fact on the loop, with where it came from.</p>
+      <div id="out"></div>
+      <h2>Conference numbers</h2>
+      <p>Review, program, and registration numbers come from the MLSP 2026 organizing committee. Papers, themes, and session times come from the <a href="https://neuroneural.net/mlsp2026schedule/">MLSP 2026 schedule</a>.</p>
+    </main>
+    <script>
+      function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+      fetch("data/facts.json").then(function (r) { return r.json(); }).then(function (d) {
+        var groups = { "atlanta-fun": "Atlanta", "atlanta-engineering": "Atlanta builds", "mlsp-community": "The MLSP community" };
+        var html = "";
+        Object.keys(groups).forEach(function (g) {
+          var fs = d.facts.filter(function (f) { return f.group === g; });
+          if (!fs.length) return;
+          html += "<h2>" + groups[g] + "</h2><ol>" + fs.map(row).join("") + "</ol>";
+        });
+        html += "<h2>Trivia</h2><ol>" + (d.trivia || []).map(function (q) { return row({ text: q.question + " " + q.answer, source_url: q.source_url, source_title: q.source_title, checked_on: q.checked_on }); }).join("") + "</ol>";
+        if (d.mlsp2027) html += "<h2>MLSP 2027</h2><ol>" + row(d.mlsp2027) + "</ol>";
+        document.getElementById("out").innerHTML = html;
+        document.getElementById("meta").textContent = "Every fact on the loop, with where it came from. Checked on " + d.checked_on + ".";
+      });
+      function row(f) {
+        var more = (f.extra_sources || []).map(function (u) { return '<br><a href="' + esc(u) + '">' + esc(u) + "</a>"; }).join("");
+        return '<li><span class="t">' + esc(f.text) + '</span><br><a href="' + esc(f.source_url) + '">' + esc(f.source_title) + "</a>" + more + "<br><small>checked " + esc(f.checked_on) + "</small></li>";
+      }
+    </script>
+  </body>
+</html>
