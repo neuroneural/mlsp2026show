@@ -202,9 +202,11 @@
   },
   "venues": {
     "Banquet Dinner at the Aquarium": {
-      "place": "Georgia Aquarium",
+      "place": "Georgia Aquarium, Oceans Ballroom",
       "address": "225 Baker St NW, across from Centennial Olympic Park",
-      "source_url": "https://www.georgiaaquarium.org/contact-us/"
+      "source_url": "https://www.georgiaaquarium.org/contact-us/",
+      "note": "7:00 PM keynote: Sourabh Jain, Amazon Web Services",
+      "note_source": "MLSP 2026 gala flyer (organizing committee)"
     }
   }
 }

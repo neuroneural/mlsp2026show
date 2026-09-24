@@ -152,10 +152,11 @@
       var up = st.upcoming;
       var hs = '<p class="eyebrow">Tonight</p><h1>' + esc(e.title) + "</h1>" +
         '<div class="lead">' + range(e) + "</div>" +
-        (v ? '<div class="lead cyan" style="margin-top:14px">' + esc(v.place) + '</div><div class="body">' + esc(v.address) + "</div>" : "");
+        (v ? '<div class="lead cyan" style="margin-top:14px">' + esc(v.place) + '</div><div class="body">' + esc(v.address) + "</div>" + (v.note ? '<div class="body" style="margin-top:14px;color:#fff">' + esc(v.note) + "</div>" : "") : "");
       if (up && up.events.length) {
-        hs += '<div class="grow"></div><p class="eyebrow">Tomorrow, ' + esc(dayLabel(st.upcomingDate).split(", ")[1]) + '</p><div class="list">' +
-          up.events.slice(0, 2).map(li).join("") + "</div>";
+        hs += '<div class="grow"></div><div class="nextline"><span class="cyan">Tomorrow:</span> ' + up.events.slice(0, 2).map(function (e) {
+          return "<b>" + T.msClock(e.start) + "</b> " + esc(e.title);
+        }).join(" \u00b7 ") + "</div>";
       }
       return el(hs, "now");
     }
@@ -439,6 +440,39 @@
       '<div style="flex:0 0 360px;text-align:center"><div class="qr sm" style="margin:60px auto 20px">' + qrSVG(ctx.sourcesURL) + '</div><div class="body" style="font-size:40px">All sources</div></div></div>', "sources");
   }
 
+  // A ready-made image shown as its own slide, e.g. the gala flyer.
+  // Shows until im.until (Atlanta time, "YYYY-MM-DDTHH:MM"), if set.
+  function imageSlide(im) {
+    return function (ctx) {
+      if (!im || !im.src) return null;
+      if (im.until && ctx.now() >= T.parseLocal(im.until)) return null;
+      return el('<div class="imgslide"><img src="' + esc(im.src) + '" alt="' + esc(im.alt || "") + '"></div>', "image");
+    };
+  }
+  var ICONS = {
+    calendar: '<rect x="4" y="6" width="24" height="22" rx="4"/><path d="M4 13h24M11 3v6M21 3v6"/><circle cx="11" cy="19" r="1.4"/><circle cx="16" cy="19" r="1.4"/><circle cx="21" cy="19" r="1.4"/><circle cx="11" cy="24" r="1.4"/><circle cx="16" cy="24" r="1.4"/>',
+    pin: '<path d="M16 29s-9-9.2-9-16a9 9 0 0 1 18 0c0 6.8-9 16-9 16z"/><circle cx="16" cy="13" r="3.4"/>',
+    bus: '<rect x="6" y="4" width="20" height="21" rx="4"/><path d="M6 15h20M10 25v3M22 25v3"/><circle cx="11" cy="20" r="1.4"/><circle cx="21" cy="20" r="1.4"/>',
+    ticket: '<path d="M5 11a3 3 0 0 0 0 6v6h22v-6a3 3 0 0 1 0-6V5H5z" transform="rotate(-30 16 16)"/>',
+    mic: '<rect x="12" y="4" width="8" height="15" rx="4"/><path d="M8 15a8 8 0 0 0 16 0M16 23v5M11 28h10"/>',
+  };
+  function icon(name) {
+    return '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICONS[name] || "") + "</svg>";
+  }
+  // Gala slide built from the organizers' art, with our own text.
+  function buildGala(ctx) {
+    var g = ctx.stats && ctx.stats.gala;
+    if (!g) return null;
+    if (g.until && ctx.now() >= T.parseLocal(g.until)) return null;
+    var k = g.keynote, sp = g.sponsor;
+    var rows = (g.rows || []).map(function (r) {
+      return '<div class="g-row"><div class="g-ic">' + icon(r.icon) + '</div><div class="g-tx">' + esc(r.text) + (r.hi ? '<span class="cyan"> ' + esc(r.hi) + "</span>" : "") + "</div></div>";
+    }).join("");
+    var kn = k ? '<div class="g-kn"><img class="g-face" src="' + esc(k.photo) + '" alt=""><div class="g-kt"><div class="g-badge">' + icon("mic") + " Keynote \u00b7 " + esc(k.time) + '</div><div class="g-name">' + esc(k.name) + '</div><div class="g-role">' + esc(k.role) + "</div></div>" +
+      (sp ? '<div class="g-sp"><div>' + esc(sp.label) + '</div><img src="' + esc(sp.logo) + '" alt="' + esc(sp.alt || "") + '"></div>' : "") + "</div>" : "";
+    return el('<div class="gala"><div class="g-left">' + (g.eyebrow ? '<p class="eyebrow">' + esc(g.eyebrow) + "</p>" : "") + '<h1 class="g-title">' + esc(g.title1) + "<br>" + esc(g.title2a) + '<span class="cyan">' + esc(g.title2b) + "</span></h1>" +
+      '<div class="g-rows">' + rows + "</div>" + kn + '</div></div><div class="g-bg"></div><div class="g-art"><img src="' + esc(g.art) + '" alt=""></div>', "gala-slide");
+  }
   function setVenues(v) { VENUES = v || {}; }
 
   root.ShowSlides = {
@@ -447,6 +481,6 @@
     statThemes: statThemes, statWords: statWords, statReg: statReg, statRegions: statRegions,
     committee: committee, buildChairs: buildChairs, buildACs: buildACs, reviewerPage: reviewerPage,
     factSlide: factSlide, triviaQ: triviaQ, triviaA: triviaA, buildSources: buildSources,
-    tickCountdown: tickCountdown, setVenues: setVenues, qrSVG: qrSVG,
+    tickCountdown: tickCountdown, setVenues: setVenues, imageSlide: imageSlide, buildGala: buildGala, qrSVG: qrSVG,
   };
 })(this);

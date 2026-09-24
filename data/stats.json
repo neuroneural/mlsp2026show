@@ -175,5 +175,45 @@
     "Justin Romberg": "img/keynotes/romberg.jpg",
     "Chethan Pandarinath": "img/keynotes/pandarinath.jpg",
     "Mohit Bansal": "img/keynotes/bansal.jpg"
+  },
+  "imageSlides": [],
+  "gala": {
+    "until": "2026-09-30T21:30",
+    "eyebrow": "",
+    "title1": "Conference Gala",
+    "title2a": "at the ",
+    "title2b": "Georgia Aquarium",
+    "rows": [
+      {
+        "icon": "calendar",
+        "text": "Wednesday, September 30,",
+        "hi": "6:30 to 9:30 PM"
+      },
+      {
+        "icon": "pin",
+        "text": "Oceans Ballroom, Georgia Aquarium"
+      },
+      {
+        "icon": "bus",
+        "text": "From here:",
+        "hi": "walk, Streetcar, or Uber/Lyft"
+      },
+      {
+        "icon": "ticket",
+        "text": "Included with your registration"
+      }
+    ],
+    "keynote": {
+      "time": "7:00 PM",
+      "name": "Sourabh Jain",
+      "role": "Cloud Transformation Leader, AWS",
+      "photo": "img/gala/jain.jpg"
+    },
+    "sponsor": {
+      "label": "Sponsored by",
+      "logo": "img/gala/aws.jpg",
+      "alt": "AWS"
+    },
+    "art": "img/gala/collage.webp"
   }
 }

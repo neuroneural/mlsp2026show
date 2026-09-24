@@ -127,6 +127,10 @@
       add("area-chairs", "thanks", 14, SL.buildACs);
     }
     add("chairs", "thanks", 13, SL.buildChairs);
+    if (data.stats && data.stats.gala) add("gala", "event", 14, SL.buildGala);
+    ((data.stats && data.stats.imageSlides) || []).forEach(function (im) {
+      add("image-" + im.id, "event", im.dur || 14, SL.imageSlide(im));
+    });
     var nrev = data.reviewers ? Math.ceil(data.reviewers.length / 48) : 0;
     for (var r = 0; r < nrev; r++) add("reviewers-" + (r + 1), "thanks", 14, SL.reviewerPage(r));
     (data.facts.facts || []).forEach(function (f) { add("fact-" + f.id, "fact", 11, SL.factSlide(f)); });
@@ -171,6 +175,7 @@
     content = content.concat(take(stats, "stat", posterOn ? 2 : 3));
     content = content.concat(take(thanks, "thanks", after ? 3 : 2));
     content = content.concat(take(facts, "fact", posterOn ? 4 : (after ? 6 : 5)));
+    content = content.concat(take(by(function (d) { return d.kind === "event"; }).filter(valid), "event", 1));
     if (posterOn) {
       var pd = by(function (d) { return d.id === "posters"; })[0];
       if (valid(pd)) content.push(pd, pd);
