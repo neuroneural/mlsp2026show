@@ -135,11 +135,23 @@
       "id": "mlsp-hosts",
       "group": "mlsp-community",
       "headline": "Recent MLSP hosts",
-      "list": ["2019 Pittsburgh", "2020 Espoo", "2021 Gold Coast", "2022 Xi'an", "2023 Rome", "2024 London", "2025 Istanbul", "2026 Atlanta"],
+      "list": [
+        "2019 Pittsburgh",
+        "2020 Espoo",
+        "2021 Gold Coast",
+        "2022 Xi'an",
+        "2023 Rome",
+        "2024 London",
+        "2025 Istanbul",
+        "2026 Atlanta"
+      ],
       "text": "Recent MLSP hosts: Pittsburgh, Espoo, Gold Coast, Xi'an, Rome, London, Istanbul, and now Atlanta.",
       "source_url": "https://2023.ieeemlsp.org/past-workshops/",
       "source_title": "IEEE MLSP 2023 Past Workshops; MLSP 2024 call (London, Sep 22-25, 2024); MLSP 2025 site (Istanbul)",
-      "extra_sources": ["https://enotice.vtools.ieee.org/public/150800", "https://2025.ieeemlsp.org/en/"],
+      "extra_sources": [
+        "https://enotice.vtools.ieee.org/public/150800",
+        "https://2025.ieeemlsp.org/en/"
+      ],
       "checked_on": "2026-09-24"
     },
     {
@@ -147,10 +159,13 @@
       "group": "mlsp-community",
       "headline": "This is number 36",
       "big": "36th",
-      "text": "Istanbul hosted the 35th MLSP in 2025. Atlanta hosts the 36th.",
+      "text": "Istanbul hosted the 35th MLSP in 2025. Atlanta hosts the 36th. The 37th goes to Uppsala, Sweden, in September 2027.",
       "source_url": "https://2025.ieeemlsp.org/en/",
-      "source_title": "IEEE MLSP 2025: 35th IEEE International Workshop on Machine Learning for Signal Processing",
-      "checked_on": "2026-09-24"
+      "source_title": "IEEE MLSP 2025 (35th workshop); IEEE SPS: 2027 IEEE MLSP, Uppsala, Sweden, Sep 13-16, 2027",
+      "checked_on": "2026-09-24",
+      "extra_sources": [
+        "https://signalprocessingsociety.org/events/2027-ieee-international-workshop-machine-learning-signal-processing-mlsp"
+      ]
     }
   ],
   "trivia": [
